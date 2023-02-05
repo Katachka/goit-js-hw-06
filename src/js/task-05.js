@@ -6,7 +6,17 @@ refs.input.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
     if (refs.input.value === "") {
-    return (refs.span.textContent = "Anonymous");
+    return (span.textContent = "Anonymous");
   }
   refs.span.textContent = event.currentTarget.value;
 }
+
+
+// const inputEl = document.querySelector("#name-input");
+// const spanEl = document.querySelector("#name-output");
+// inputEl.addEventListener("input", (event) => {
+//   if (inputEl.value === "") {
+//     return (spanEl.textContent = "Anonymous");
+//   }
+//   spanEl.textContent = event.currentTarget.value;
+// });
